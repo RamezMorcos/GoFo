@@ -7,6 +7,7 @@ public class playground {
     String name;
     String location;
     int size;
+    int price;
     ArrayList<Integer> available_hours;
     playground_owner plo;
     ArrayList<booking>reservations;

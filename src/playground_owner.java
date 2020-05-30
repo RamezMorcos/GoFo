@@ -14,7 +14,7 @@ public class playground_owner extends user {
             System.out.println(my_playgrounds.get(i).id +"  "+my_playgrounds.get(i).name);
         }
     }
-    public void get_a_ecific_playground(int id){
+    public void get_a_specific_playground(int id){
         for(int i=0;i<my_playgrounds.size();i++){
             if(my_playgrounds.get(i).id==id) {
                 System.out.println(my_playgrounds.get(i).id );

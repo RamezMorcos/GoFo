@@ -1,5 +1,6 @@
 public class eWallet {
    private double balance;
+   String visa_account_number;
    eWallet(){
        balance=0;
    }
