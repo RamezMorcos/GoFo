@@ -1,4 +1,4 @@
 public class Requested_team {
-    int sender_id;
-    int reciever_id;
+    player sender;
+    player reciever;
 }

@@ -7,7 +7,7 @@ public class playground_owner extends user {
         my_playgrounds.add(new_playground);
     }
     public void print_ewallet(){
-        System.out.println(ew);
+        System.out.println(ew.view_balance());
     }
     public void get_all_my_playgrounds(){
         for(int i=0;i<my_playgrounds.size();i++){
@@ -35,7 +35,9 @@ public void update_playground(int id ,String up_name,int up_start_time,int end_t
             my_playgrounds.get(i).available_hours.clear();
             my_playgrounds.get(i).name=up_name;
             for(int j=up_start_time;j<=end_time;j++){
-                my_playgrounds.get(i).available_hours.add(j);
+                Reserved_hours rh=new Reserved_hours();
+                rh.hour=j;
+                my_playgrounds.get(i).available_hours.add(rh);
             }
             break;
         }
