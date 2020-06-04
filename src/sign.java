@@ -49,6 +49,4 @@ if(email.contains("@")&&email.contains(".com")){
         u.ew.add_to_balance(b);
         System.out.println("Regestered  successfully to system");
     }
-
-
 }
