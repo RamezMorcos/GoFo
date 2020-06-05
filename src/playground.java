@@ -21,9 +21,7 @@ public class playground {
                     }
                 }
             }
-
         }
-
     }
     public void print_playground(){
         System.out.println("It is number to reserve is "+id);
@@ -31,7 +29,10 @@ public class playground {
         System.out.println("The location "+ location);
         System.out.println("The playground size "+size);
         System.out.println("The playground price per hour is "+price);
-
+        System.out.println("The playground avail hours ");
+        for(int i=0;i<available_hours.size();i++){
+            System.out.println(available_hours.get(i).hour);
+        }
 
 
 
