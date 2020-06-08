@@ -1,6 +1,11 @@
+/**
+ * ewallet class is responsible for payment
+ * each user has account we assume it is his bank acount which have money which is balance and account number
+ */
+
 public class eWallet {
    private double balance;
-   String visa_account_number;
+   public String visa_account_number;
    eWallet(){
        balance=0;
    }

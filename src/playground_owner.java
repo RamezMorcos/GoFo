@@ -1,5 +1,11 @@
 import java.util.ArrayList;
 
+/**
+ * playground owner which have one or many playgrounds
+ * he can view his playgrounds and his ewallet
+ * he can add playground and wait untill the approve of admin to be added to system
+ * he also can update his play ground
+ */
 public class playground_owner extends user {
     ArrayList<playground>my_playgrounds=new ArrayList<playground>();
 
@@ -29,11 +35,12 @@ public class playground_owner extends user {
             }
     }
 
-public void update_playground(int id ,String up_name,int up_start_time,int end_time){
+public void update_playground(int id ,String up_name,int up_start_time,int end_time,int up_price){
     for(int i=0;i<my_playgrounds.size();i++){
         if(my_playgrounds.get(i).id==id) {
             my_playgrounds.get(i).available_hours.clear();
             my_playgrounds.get(i).name=up_name;
+            my_playgrounds.get(i).price=up_price;
             for(int j=up_start_time;j<=end_time;j++){
                 Reserved_hours rh=new Reserved_hours();
                 rh.hour=j;

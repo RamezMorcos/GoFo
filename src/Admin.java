@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * Admin is responsible for add other admins and view requested playgrounds
+ * and choose which playgound to add and which to delete
+ */
 public class Admin {
     private static final AtomicInteger count = new AtomicInteger(0);
     int id = count.incrementAndGet();

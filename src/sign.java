@@ -1,21 +1,22 @@
 import java.util.Scanner;
 
+/**
+ * that class is responsible for the reqestration
+ * and there is check mail to check if the mail is formal or not
+ */
 public class sign {
     user u;
     sign(){
-
+            u=new user();
     }
-    sign(user us){
-        this.u=us;
 
-    }
     public boolean check_email(String email){
 if(email.contains("@")&&email.contains(".com")){
     return true;
 }
         return false ;
     }
-    public void regestration(){
+    public user regestration(){
 
         Scanner s=new Scanner(System.in);
         System.out.println(" Enter your name ");
@@ -41,12 +42,13 @@ if(email.contains("@")&&email.contains(".com")){
 
         }
         System.out.println(" Enter your telephone number ");
-        u.password=s.next();
+        u.telephone_number=s.next();
         System.out.println(" Enter your ewallet visa account number ");
         u.ew.visa_account_number=s.next();
         System.out.println(" Enter your the number of money you want to add to your wallet ");
         double b=s.nextDouble();
         u.ew.add_to_balance(b);
         System.out.println("Regestered  successfully to system");
+    return u;
     }
 }

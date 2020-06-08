@@ -1,4 +1,12 @@
 import java.util.ArrayList;
+/**
+ * login page which is responsible  for log in it is check if the user is loged in system
+ * as a player or
+ * playground owner
+ * or he is the admin
+ * it returns true or false
+ * which means he is in system or not
+ */
 
 public class Login {
     String email;
@@ -37,9 +45,6 @@ public boolean check_players(ArrayList<player> u){
         }
         return false;
     }
-
-
-
 
 public player get_logged_player(){
         return us;
